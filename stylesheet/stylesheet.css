@@ -72,6 +72,7 @@ a {
     position: relative;
     top: 100px;
     grid-area: p;
+    background: linear-gradient( blue, white);
 }
 .header__nav {
     display: inline-block;
