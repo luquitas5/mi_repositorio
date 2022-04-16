@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.home__mainContenedor {
+    display: grid;
+    grid-template-rows: 200px 1fr 200px ;
+    grid-template-columns: 300px 600px 200px 1fr;
+    grid-template-areas: 
+    "h1 h1 . linea "
+    "comillas p . notebook"
+    "rayo . . ."
+    
+    ;
+}
+#rayo {
+    width: 300px;
+    grid-area: rayo;
+    position: relative;
+    right: 100px;
+    bottom: 50px;
+
+}
+#comillas {
+    display: inline-block;
+    grid-area: comillas;
+    justify-self: end;
+    position: relative;
+    top: 75px;
+    left: 70px;
+}   
+#linea {
+    width: 500px;
+    grid-area: linea;
+    position: relative;
+    left: 300px;
+    top: 50px;
+}
+#header__div {
+    display: block;
+
+
+}
+#header__div--logo {
+    position: relative;
+    top: 20px;
+}
+#notebook {
+    grid-area: notebook;
+    position: relative;
+    bottom: 50px;
+}
+#home__titulo {
+    font-family: 'Roboto' , sans-serif;
+    font-size: 60px;
+    margin-left: 50px;
+    position: relative;
+    top: 150px;
+    left: 90px;
+    grid-area: h1;
+}
+a {
+    font-family: 'Roboto' , sans-serif;
+}
+
+#home__parrafo {
+    font-family: 'Roboto' , sans-serif;
+    font-size: 40px;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    grid-area: p;
+}
+.header__nav {
+    display: inline-block;
+    position: relative;
+    left: 150px;
+
+
+}
+.nav__ul li {
+    display: inline;
+   text-align: center;
+   color: #2B5C91;
+   font-size: 24px;
+   font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+  /*  margin-bottom: 200px; */
+   margin: 0 80px 0 0;
+}
+.nav__ul li:visited{
+    text-decoration: none;
+    color: #2B5C91;
+}
+.nav__ul li:link{
+    text-decoration: none;
+    color: #2B5C91;
+}
+#header__div--logo {
+    width: 250px;
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+}
+.nav__ul {
+    list-style-type: none;
+    text-align: center;
+}
+#linea {
+    display: inline-block;
+    position: relative;
+    top: 100px;
+}
+footer {
+    font-family: 'Roboto' , sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Servicios */
+
+#CM {
+
+    display: grid;
+    grid-template-rows: 120px 50px 100px;
+    justify-items: center;
+    grid-area: CM;
+}
+#DG {
+   
+    display: grid;
+    grid-template-rows: 120px 50px 100px;
+    justify-items: center;
+    grid-area: DG;
+}
+#DW {
+   
+    display: grid;
+    grid-template-rows: 120px 50px 100px;
+    justify-items: center;
+    grid-area: DW;
+}
+.serv_h3 {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: bolder;
+}
+.serv_p {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 400;
+}
+#titulo {
+    grid-area: titulo;
+    align-self: center;
+    font-family: 'Roboto';
+    font-size: 45px;
+    font-weight: bolder;
+}
+#serv_mainContainer {
+    display: grid;
+    grid-template-rows: 300px 500px;
+    grid-template-columns: repeat(3,400px);
+    grid-template-areas: 
+    "titulo . ."
+    "CM DG DW"    
+    ;
+    justify-content: space-evenly;
+}
